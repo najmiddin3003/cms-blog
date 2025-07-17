@@ -7,7 +7,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { Badge } from "../ui/badge";
 import { format } from "date-fns";
-import { MouseEvent } from "react";
 
 interface Props extends IBlog {
   isVertical?: boolean;
