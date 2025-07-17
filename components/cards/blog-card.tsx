@@ -14,11 +14,6 @@ interface Props extends IBlog {
 }
 
 function BlogCard(blog: Props) {
-
-  const onTag = (e: MouseEvent<HTMLSpanElement, MouseEvent>) => {
-    e.stopPropagation()
-  }
-
   return (
     <div
 
