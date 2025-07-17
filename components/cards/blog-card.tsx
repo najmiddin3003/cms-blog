@@ -1,6 +1,6 @@
 'use client'
 
-import { cn, getReadingTime } from "@/lib/utils";
+import { cn } from "@/lib/utils";
 import { IBlog } from "@/types";
 import { CalendarDays, Clock, Dot, Minus } from "lucide-react";
 import Image from "next/image";
@@ -52,7 +52,7 @@ function BlogCard(blog: Props) {
             <div className="flex items-center gap-2">
               <Clock className="w-5 h-5" />
               <p>
-                {getReadingTime(blog.content.html)} min read
+                01 min read
               </p>
             </div>
           </div>
@@ -80,7 +80,7 @@ function BlogCard(blog: Props) {
           </div>
           <Dot />
           <div className="flex items-center gap-2">
-              <Badge role="button" variant={"secondary"}>{blog.tag.name}</Badge>
+            <Badge role="button" variant={"secondary"}>{blog.tag.name}</Badge>
           </div>
         </div>
       </div>

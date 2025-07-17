@@ -6,7 +6,7 @@ import { User2 } from "lucide-react";
 import React, { useState } from "react";
 
 const Footer = () => {
-  const [active,setActive] = useState(false)
+  const [active] = useState(false)
 
 
 

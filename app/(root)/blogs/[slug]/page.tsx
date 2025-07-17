@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { getReadingTime } from "@/lib/utils";
 import { getDetailedBlog } from "@/service/blog.service";
 import {format} from "date-fns"
 import {
@@ -42,7 +41,7 @@ async function SlugPage({ params }: { params: { slug: string } }) {
         <Minus />
         <div className="flex items-center gap-2">
           <Clock className="w-5 h-5" />
-          <p>{getReadingTime(blog.content.html)} min read</p>
+          <p>01 min read</p>
         </div>
         <Minus />
         <div className="flex items-center gap-2">
