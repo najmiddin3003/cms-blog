@@ -16,8 +16,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-async function SlugPage({ params }: { params: { slug: string } }) {
+async function page({ params }: { params: { slug: string } }) {
 
   const blog = await getDetailedBlog(params.slug)
 
@@ -284,4 +283,4 @@ async function SlugPage({ params }: { params: { slug: string } }) {
   );
 }
 
-export default SlugPage;
+export default page;
